@@ -16,4 +16,4 @@ Either download or clone the repo and open 'index.html' inside your browser or g
 ## technologies used:
 * Html
 * Css
-* JaveScript
+* JavaScript
