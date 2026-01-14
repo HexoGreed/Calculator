@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+/*  Styles for the history buttons in the grid */
+.historyBTN {
+    background-color: hsl(0, 0%, 20%);
+    font-size: 1.5rem; /* Adjusted for longer text like "CH" */
+}
+
+.historyBTN:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0,0%,3%);
+    color: white;
+}
+
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0,0%,15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+    position: relative; /*  Required to keep the side panel inside the calculator */
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color:white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 50%);
+}
+
+button:active{
+    background-color: hsl(0, 0%, 60%);
+}
+
+.operatorBTN{
+     background-color: hsl(29, 100%, 50%);
+}
+
+.operatorBTN:hover{
+     background-color: hsl(29, 100%, 60%);
+}
+
+.operatorBTN:active{
+     background-color: hsl(29, 100%, 80%);
+}
+
+/* side pannel slide in */
+
+.side-panel {
+    position: absolute;
+    top: 0;
+    right: -70%; /* Hidden off screen to the right */
+    width: 70%;
+    height: 100%;
+    background-color: rgba(15, 15, 15, 0.98); /**/
+    transition: right 0.4s ease; /* This makes it slide */
+    z-index: 10;
+    padding: 25px;
+    box-sizing: border-box;
+    color: white;
+    border-left: 2px solid #222;
+}
+
+.side-panel.open {
+    right: 0; /* sldies in  */
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.close-btn {
+    background: none;
+    width: auto;
+    height: auto;
+    font-size: 2.5rem;
+    color: #888;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+#history-list li {
+    padding: 15px 10px;
+    border-bottom: 1px solid #222;
+    font-size: 1.4rem;
+    text-align: right;
+}
