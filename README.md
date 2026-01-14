@@ -13,7 +13,7 @@ A clean, modern calculator built with HTML, CSS, and JavaScript featuring a slid
 Either download or clone the repo and open 'index.html' inside your browser or go through the link
 **Live Link**: https://hexogreed.github.io/Calculator/
 
-##technologies used:
+## technologies used:
 -Html
 -Css
 -JaveScript
