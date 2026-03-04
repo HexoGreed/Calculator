@@ -31,9 +31,11 @@ body{
     font-family: Arial, sans-serif;
     background-color: hsl(0,0%,15%);
     border-radius: 15px;
-    max-width: 500px;
+    width: 95%;          
+    max-width: 500px;    
+    min-width: 320px;    
     overflow: hidden;
-    position: relative; /*  Required to keep the side panel inside the calculator */
+    position: relative; 
 }
 
 #keys{
